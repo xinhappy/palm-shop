@@ -80,11 +80,11 @@
       <p class="fl" style="line-height: 22px;font-size: 16px;">综合服务</p>
     </div>
     <grid :cols="4" :show-lr-borders="false" :show-vertical-dividers="false">
-      <grid-item>
+      <grid-item link="/declare">
         <img slot="icon" src="./images/gu.png">
         <span class="grid-center">故障申告</span>
       </grid-item>
-      <grid-item>
+      <grid-item link="/tracking">
         <img slot="icon" src="./images/gen.png">
         <span class="grid-center">工单追踪</span>
       </grid-item>

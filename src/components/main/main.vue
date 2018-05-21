@@ -13,23 +13,23 @@
         <img slot="icon" src="./images/chong.png">
         <span class="grid-center">充值缴费</span>
       </grid-item>
-      <grid-item>
+      <grid-item link="/query">
         <img slot="icon" src="./images/cha.png">
         <span class="grid-center">业务查询</span>
       </grid-item>
-      <grid-item>
+      <grid-item link="/handling">
         <img slot="icon" src="./images/ban.png">
         <span class="grid-center">业务办理</span>
       </grid-item>
-      <grid-item>
+      <grid-item link="/tracking">
         <img slot="icon" src="./images/gong.png">
         <span class="grid-center">工单追踪</span>
       </grid-item>
-      <grid-item>
+      <grid-item link="/home">
         <img slot="icon" src="./images/wo.png">
         <span class="grid-center">我的服务</span>
       </grid-item>
-      <grid-item>
+      <grid-item link="/declare">
         <img slot="icon" src="./images/gu.png">
         <span class="grid-center">故障申报</span>
       </grid-item>
@@ -37,7 +37,7 @@
         <img slot="icon" src="./images/tou.png">
         <span class="grid-center">投诉建议</span>
       </grid-item>
-      <grid-item>
+      <grid-item link="/more">
         <img slot="icon" src="./images/geng.png">
         <span class="grid-center">更多服务</span>
       </grid-item>
