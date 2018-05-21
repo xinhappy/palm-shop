@@ -4,7 +4,7 @@
       <a slot="left" class="back" @click="back()"></a>
       更多服务
     </x-header>
-    <group  gutter="0">
+    <group gutter="0">
       <cell title="供水缴费" is-link>
         <img slot="icon" width="25" style="display:block;margin-right:5px;" src="./images/shui.png">
       </cell>

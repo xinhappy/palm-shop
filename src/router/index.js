@@ -8,6 +8,7 @@ import Hand from 'src/components/handling/handling'
 import Declare from 'src/components/declare/declare'
 import Tracking from 'src/components/tracking/tracking'
 import More from 'src/components/more/more'
+import Message from 'src/components/message/message'
 
 Vue.use(Router)
 
@@ -52,6 +53,11 @@ export default new Router({
       path: '/more',
       name: 'more',
       component: More
+    },
+    {
+      path: '/message',
+      name: 'message',
+      component: Message
     }
   ]
 })

@@ -111,16 +111,16 @@
 </script>
 
 <style scoped lang="less" rel="stylesheet/less">
-  .serRoom{
-    .search{
+  .serRoom {
+    .search {
       background: url("./images/title_blue.png");
       padding: 2vw 3vw;
-      .into{
+      .into {
         color: #aaa;
         text-align: center;
         background: url("./images/search.png") no-repeat center;
         background-size: contain;
-        .icon_s{
+        .icon_s {
           background: url(./images/search_i.png) no-repeat;
           background-size: contain;
           width: 3vw;
@@ -132,13 +132,13 @@
         }
       }
     }
-    .title{
+    .title {
       background: url("./images/title.png") no-repeat;
       width: 1vw;
       height: 5vw;
       margin: 0 3vw;
     }
-    .title_blue{
+    .title_blue {
       background: url("./images/title_blue.png") no-repeat;
       width: 1vw;
       height: 5vw;
@@ -151,11 +151,12 @@
     text-align: center;
     color: #666;
   }
+
   .weui-grids {
     background-color: #fff;
-    .weui-grid{
+    .weui-grid {
       padding: 10px 0;
-      &:after{
+      &:after {
         border-bottom: none;
       }
     }

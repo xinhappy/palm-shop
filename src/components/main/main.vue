@@ -5,7 +5,7 @@
       <x-icon slot="overwrite-left" type="navicon" size="35"
               style="fill:#fff;position:relative;top:-8px;left:-3px;"></x-icon>
       <a slot="right" class="search"></a>
-      <a slot="right" class="msg"></a>
+      <a slot="right" class="msg" @click="go('message')"></a>
     </x-header>
     <swiper :list="demo_list" loop auto :aspect-ratio="350/800" dots-position="center"></swiper>
     <grid :cols="4" :show-lr-borders="false" :show-vertical-dividers="false">
@@ -49,9 +49,9 @@
       </div>
       <div class="fl notice_r">
         <swiper auto loop height="30px" direction="vertical" :interval=2000 class="text-scroll" :show-dots="false">
-          <swiper-item><p>义务爱了 完成传奇世界H5-王者归来任务 获得20金币</p></swiper-item>
-          <swiper-item><p>基本世神 兑换《传奇世界H5》畅玩级礼包 消耗30金币</p></swiper-item>
-          <swiper-item><p>完成传奇世界H5-王者归来任务 获得30金币</p></swiper-item>
+          <swiper-item @click.native="go('message')"><p>义务爱了 完成传奇世界H5-王者归来任务 获得20金币</p></swiper-item>
+          <swiper-item @click.native="go('message')"><p>基本世神 兑换《传奇世界H5》畅玩级礼包 消耗30金币</p></swiper-item>
+          <swiper-item @click.native="go('message')"><p>完成传奇世界H5-王者归来任务 获得30金币</p></swiper-item>
         </swiper>
       </div>
     </div>
@@ -89,7 +89,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import {XHeader, Swiper,SwiperItem, Grid, GridItem} from 'vux'
+  import {XHeader, Swiper, SwiperItem, Grid, GridItem} from 'vux'
   import * as ApiService from 'api/api'
   import Footer from 'components/footer/footer'
   import banner1 from './images/banner1.jpg'
@@ -131,102 +131,109 @@
         ]
       }
     },
-    methods: {}
+    methods: {
+      go(path){
+        this.$router.replace(path)
+      }
+    }
   }
 </script>
 
 <style scoped lang="less" rel="stylesheet/less">
-  .mainRoom{
-    .search{
+  .mainRoom {
+    .search {
       background: url(./images/search.png) no-repeat;
       background-size: contain;
       display: inline-block;
       width: 5vw;
       height: 5vw;
     }
-    .msg{
+    .msg {
       background: url(./images/msg.png) no-repeat;
       background-size: contain;
       display: inline-block;
       width: 5vw;
       height: 5vw;
     }
-    .notice{
+    .notice {
       padding-left: 10px;
       font-size: 4vw;
       font-weight: bold;
       line-height: 20px;
-      &.red{
+      &.red {
         color: red;
       }
-      &.bla{
+      &.bla {
         color: #000;
       }
     }
-    .notice_r{
+    .notice_r {
       width: 80%;
       padding-left: 10px;
       margin: 5px 0 5px 5px;
       border-left: 2px solid #ccc;
     }
-    .reduce{
+    .reduce {
       width: 45%;
     }
-    .reduce_r{
+    .reduce_r {
       width: 55%;
     }
-    .title{
+    .title {
       background: url("./images/title.png") no-repeat;
       width: 1vw;
       height: 5vw;
       margin: 0 3vw;
     }
-    .last{
+    .last {
       margin-top: 1px;
       margin-bottom: 12vw;
       background-color: #fff;
-      .left{
+      .left {
         width: 45%;
         padding: 2vw;
       }
-      .left_img{
+      .left_img {
         background: url(./images/news.png) no-repeat;
         background-size: contain;
         width: 15vw;
         height: 15vw;
       }
-      .right{
+      .right {
         width: 45%;
         padding: 2vw;
       }
-      .right_img{
+      .right_img {
         background: url(./images/chi.png) no-repeat;
         background-size: contain;
         width: 15vw;
         height: 15vw;
       }
-      .xiao{
+      .xiao {
         font-size: 12px;
         color: #c0c0c0;
       }
     }
   }
-  .text-scroll p{
+
+  .text-scroll p {
     white-space: nowrap;
-    text-overflow:ellipsis;
+    text-overflow: ellipsis;
     overflow: hidden;
     line-height: 30px;
   }
+
   .grid-center {
     display: block;
     text-align: center;
     color: #666;
   }
+
   .weui-grids {
     background-color: #fff;
-    .weui-grid{
+    .weui-grid {
       padding: 10px 0;
-      &:after{
+      &:after {
         border-bottom: none;
       }
     }

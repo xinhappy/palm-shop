@@ -42,15 +42,17 @@
     width: 5vw;
     height: 5vw;
   }
-  .in-text{
+
+  .in-text {
     width: 100%;
     text-align: center;
     padding: 3vw;
     margin-top: 2vw;
     margin-bottom: 2vw;
   }
-  .bottom{
-    .btn{
+
+  .bottom {
+    .btn {
       background: url(./images/title_blue.png);
       display: block;
       width: 90%;
@@ -61,7 +63,8 @@
       padding: 1vw 0;
     }
   }
-  .vux-header .vux-header-title{
+
+  .vux-header .vux-header-title {
     color: #999;
   }
 </style>

@@ -2,7 +2,7 @@
   <div class="homeRoom">
     <div class="info">
       <div class="clearfix">
-        <a class="msg fr"></a>
+        <a class="msg fr" @click="go('message')"></a>
         <a class="set fr"></a>
       </div>
       <div class="info_msg clearfix">
@@ -37,7 +37,7 @@
 
 <script type="text/ecmascript-6">
   import Footer from 'components/footer/footer'
-  import { Cell, Group } from 'vux'
+  import {Cell, Group} from 'vux'
   import HeadImg from './images/head_img.png'
   export default {
     components: {
@@ -49,41 +49,46 @@
       return {
         headImg: HeadImg
       }
+    },
+    methods: {
+      go(path){
+        this.$router.replace(path)
+      }
     }
   }
 </script>
 
 <style scoped lang="less" rel="stylesheet/less">
-  .homeRoom{
-    .info{
+  .homeRoom {
+    .info {
       background: url("./images/title_blue.png");
       padding: 2vw 2vw 4vw 4vw;
-      .msg{
+      .msg {
         background: url(./images/msg.png) no-repeat;
         width: 5vw;
         height: 5vw;
         background-size: contain;
       }
-      .set{
+      .set {
         background: url(./images/set.png) no-repeat;
         width: 5vw;
         height: 5vw;
         background-size: contain;
         margin-right: 2vw;
       }
-      .info_msg{
+      .info_msg {
         color: #fff;
         display: flex;
         display: -webkit-flex;
-        align-items:center;
-        .head_img{
+        align-items: center;
+        .head_img {
           border: none;
           border-radius: 50% 50%;
           width: 13vw;
           height: 13vw;
           overflow: hidden;
         }
-        .account{
+        .account {
           margin-left: 3vw;
           font-size: 4vw;
         }

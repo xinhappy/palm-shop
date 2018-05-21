@@ -39,13 +39,14 @@
     width: 5vw;
     height: 5vw;
   }
-  .bottom{
+
+  .bottom {
     background-color: #fff;
     padding: 3vw 3vw 8vw;
     position: fixed;
     bottom: 0;
     width: 94%;
-    .btn{
+    .btn {
       background: url(./images/title_blue.png);
       display: block;
       width: 100%;
@@ -55,13 +56,14 @@
       border-radius: 3px;
       padding: 1vw 0;
     }
-    .last{
+    .last {
       text-align: center;
       color: #999;
       font-size: 12px;
     }
   }
-  .vux-header .vux-header-title{
+
+  .vux-header .vux-header-title {
     color: #999;
   }
 </style>
