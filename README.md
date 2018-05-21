@@ -1,4 +1,4 @@
-# oawchat
+# palm-shop
 
 > A Vue.js project
 
