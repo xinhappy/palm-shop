@@ -76,7 +76,7 @@
         </div>
         <div class="fr left_img"></div>
       </div>
-      <div class="fr right">
+      <div class="fr right" @click="go('support')">
         <div class="fl">
           <p style="color: rgb(129,188,47)">服务与支持</p>
           <p class="xiao">最专业的服务帮助</p>

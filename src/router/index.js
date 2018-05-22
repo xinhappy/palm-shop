@@ -10,6 +10,7 @@ import Tracking from 'src/components/tracking/tracking'
 import More from 'src/components/more/more'
 import Message from 'src/components/message/message'
 import Advice from 'src/components/advice/advice'
+import Support from 'src/components/support/support'
 
 Vue.use(Router)
 
@@ -64,6 +65,11 @@ export default new Router({
       path: '/advice',
       name: 'advice',
       component: Advice
+    },
+    {
+      path: '/support',
+      name: 'support',
+      component: Support
     }
   ]
 })
