@@ -25,7 +25,7 @@
         <img slot="icon" src="./images/gen.png">
         <span class="grid-center">工单追踪</span>
       </grid-item>
-      <grid-item>
+      <grid-item link="/advice">
         <img slot="icon" src="./images/tou.png">
         <span class="grid-center">投诉建议</span>
       </grid-item>

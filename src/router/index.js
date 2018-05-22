@@ -9,6 +9,7 @@ import Declare from 'src/components/declare/declare'
 import Tracking from 'src/components/tracking/tracking'
 import More from 'src/components/more/more'
 import Message from 'src/components/message/message'
+import Advice from 'src/components/advice/advice'
 
 Vue.use(Router)
 
@@ -58,6 +59,11 @@ export default new Router({
       path: '/message',
       name: 'message',
       component: Message
+    },
+    {
+      path: '/advice',
+      name: 'advice',
+      component: Advice
     }
   ]
 })

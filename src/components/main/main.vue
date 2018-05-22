@@ -33,7 +33,7 @@
         <img slot="icon" src="./images/gu.png">
         <span class="grid-center">故障申报</span>
       </grid-item>
-      <grid-item>
+      <grid-item link="/advice">
         <img slot="icon" src="./images/tou.png">
         <span class="grid-center">投诉建议</span>
       </grid-item>
