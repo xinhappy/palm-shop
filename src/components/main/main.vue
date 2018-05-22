@@ -69,7 +69,7 @@
       <p class="fl" style="line-height: 22px;font-size: 16px;">为您推荐</p>
     </div>
     <div class="clearfix last">
-      <div class="fl left">
+      <div class="fl left" @click="go('news')">
         <div class="fl">
           <p style="color: #F00">新闻资讯</p>
           <p class="xiao">及时了解行业资讯</p>

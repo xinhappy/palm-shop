@@ -11,6 +11,8 @@ import More from 'src/components/more/more'
 import Message from 'src/components/message/message'
 import Advice from 'src/components/advice/advice'
 import Support from 'src/components/support/support'
+import News from 'src/components/news/news'
+import NewsDetail from 'src/components/news/detail'
 
 Vue.use(Router)
 
@@ -70,6 +72,16 @@ export default new Router({
       path: '/support',
       name: 'support',
       component: Support
+    },
+    {
+      path: '/news',
+      name: 'name',
+      component: News
+    },
+    {
+      path: '/newsDetail/:id',
+      name: 'newsDetail',
+      component: NewsDetail
     }
   ]
 })
