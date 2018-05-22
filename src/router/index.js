@@ -13,6 +13,7 @@ import Advice from 'src/components/advice/advice'
 import Support from 'src/components/support/support'
 import News from 'src/components/news/news'
 import NewsDetail from 'src/components/news/detail'
+import Charge from 'src/components/charge/charge'
 
 Vue.use(Router)
 
@@ -82,6 +83,11 @@ export default new Router({
       path: '/newsDetail/:id',
       name: 'newsDetail',
       component: NewsDetail
+    },
+    {
+      path: '/charge/:name',
+      name: 'charge',
+      component: Charge
     }
   ]
 })

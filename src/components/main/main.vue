@@ -9,7 +9,7 @@
     </x-header>
     <swiper :list="demo_list" loop auto :aspect-ratio="350/800" dots-position="center"></swiper>
     <grid :cols="4" :show-lr-borders="false" :show-vertical-dividers="false">
-      <grid-item>
+      <grid-item link="/charge/一键缴费">
         <img slot="icon" src="./images/chong.png">
         <span class="grid-center">充值缴费</span>
       </grid-item>

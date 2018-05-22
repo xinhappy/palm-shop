@@ -10,19 +10,19 @@
       <p class="fl" style="line-height: 22px;font-size: 16px;">充值缴费</p>
     </div>
     <grid :cols="4" :show-lr-borders="false" :show-vertical-dividers="false">
-      <grid-item>
+      <grid-item  link="/charge/一键缴费">
         <img slot="icon" src="./images/yi.png">
         <span class="grid-center">统一缴费</span>
       </grid-item>
-      <grid-item>
+      <grid-item  link="/charge/固话缴费">
         <img slot="icon" src="./images/guhua.png">
-        <span class="grid-center">固化缴费</span>
+        <span class="grid-center">固话缴费</span>
       </grid-item>
-      <grid-item>
+      <grid-item  link="/charge/宽带缴费">
         <img slot="icon" src="./images/kuan.png">
         <span class="grid-center">宽带缴费</span>
       </grid-item>
-      <grid-item>
+      <grid-item  link="/charge/电视缴费">
         <img slot="icon" src="./images/tv.png">
         <span class="grid-center">电视缴费</span>
       </grid-item>
