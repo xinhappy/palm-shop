@@ -16,6 +16,9 @@ import NewsDetail from 'src/components/news/detail'
 import Charge from 'src/components/charge/charge'
 import Balance from 'src/components/balance/balance'
 import Bill from 'src/components/bill/bill'
+import ModifyPhone from 'src/components/modify-phone/modify-phone'
+import CurrentPhone from 'src/components/modify-phone/current-phone'
+import Verification from 'src/components/modify-phone/verification'
 
 Vue.use(Router)
 
@@ -100,6 +103,21 @@ export default new Router({
       path: '/bill',
       name: 'bill',
       component: Bill
+    },
+    {
+      path: '/modify-phone',
+      name: 'modify-phone',
+      component: ModifyPhone
+    },
+    {
+      path: '/current-phone',
+      name: 'current-phone',
+      component: CurrentPhone
+    },
+    {
+      path: '/verification',
+      name: 'verification',
+      component: Verification
     }
   ]
 })
