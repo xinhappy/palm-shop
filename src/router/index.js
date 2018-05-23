@@ -15,6 +15,7 @@ import News from 'src/components/news/news'
 import NewsDetail from 'src/components/news/detail'
 import Charge from 'src/components/charge/charge'
 import Balance from 'src/components/balance/balance'
+import Bill from 'src/components/bill/bill'
 
 Vue.use(Router)
 
@@ -94,6 +95,11 @@ export default new Router({
       path: '/balance',
       name: 'balance',
       component: Balance
+    },
+    {
+      path: '/bill',
+      name: 'bill',
+      component: Bill
     }
   ]
 })

@@ -40,7 +40,7 @@
         <img slot="icon" src="./images/yu.png">
         <span class="grid-center">余额查询</span>
       </grid-item>
-      <grid-item>
+      <grid-item link="/bill">
         <img slot="icon" src="./images/history.png">
         <span class="grid-center">历史账单</span>
       </grid-item>
