@@ -36,7 +36,7 @@
         <img slot="icon" src="./images/xiang.png">
         <span class="grid-center">详单查询</span>
       </grid-item>
-      <grid-item>
+      <grid-item link="/balance">
         <img slot="icon" src="./images/yu.png">
         <span class="grid-center">余额查询</span>
       </grid-item>

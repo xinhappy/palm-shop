@@ -147,10 +147,22 @@
       width: 25vw;
       margin: 2vw;
       padding: 2vw 0;
+      .in_put{
+        background-color: transparent;
+        width: 24vw;
+        text-align: center;
+        color: #333;
+      }
     }
     .demo1-item-selected {
       background-color: #329dff;
       color: #fff;
+      .in_put{
+        background-color: transparent;
+        width: 24vw;
+        text-align: center;
+        color: #fff;
+      }
       input::-webkit-input-placeholder{
         /* WebKit browsers */
         color: #fff;
@@ -167,12 +179,6 @@
         /* Internet Explorer 10+ */
         color: #fff;
       }
-    }
-    .in_put{
-      background-color: transparent;
-      width: 24vw;
-      text-align: center;
-      color: #fff;
     }
     .btn{
       background-color: rgb(219,0,27);
