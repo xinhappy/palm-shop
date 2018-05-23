@@ -4,8 +4,11 @@
       <a slot="left" class="back" @click="back()"></a>
       <a style="color: #333">用户信息</a>
     </x-header>
-    <group title="常见故障" title-color="#333">
-      <cell title="连接路由器,宽带无法上网解决办法" is-link v-for="item in  [0, 1, 2, 3, 4]"></cell>
+    <group gutter="0">
+      <cell title="姓名" value="**雷"></cell>
+      <cell title="实名认证" value="已认证"></cell>
+      <cell title="联系方式" value="15112345678"></cell>
+      <cell title="详细地址" value="平顶山新华区矿工路北段"></cell>
     </group>
   </div>
 </template>
@@ -20,7 +23,7 @@
     },
     methods: {
       back (){
-        this.$router.replace('index')
+        this.$router.go(-1)
       }
     }
   }

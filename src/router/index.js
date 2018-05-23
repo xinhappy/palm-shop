@@ -19,6 +19,7 @@ import Bill from 'src/components/bill/bill'
 import ModifyPhone from 'src/components/modify-phone/modify-phone'
 import CurrentPhone from 'src/components/modify-phone/current-phone'
 import Verification from 'src/components/modify-phone/verification'
+import Userinfo from 'src/components/userinfo/userinfo'
 
 Vue.use(Router)
 
@@ -118,6 +119,11 @@ export default new Router({
       path: '/verification',
       name: 'verification',
       component: Verification
+    },
+    {
+      path: '/userinfo',
+      name: 'userinfo',
+      component: Userinfo
     }
   ]
 })

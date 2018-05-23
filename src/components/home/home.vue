@@ -15,7 +15,7 @@
       </div>
     </div>
     <group gutter="0">
-      <cell title="用户信息" is-link>
+      <cell title="用户信息" is-link link="/userinfo">
         <img slot="icon" width="25" style="display:block;margin-right:5px;" src="./images/info.png">
       </cell>
       <cell title="我的账户" is-link>
