@@ -22,6 +22,10 @@ import Verification from 'src/components/modify-phone/verification'
 import Userinfo from 'src/components/userinfo/userinfo'
 import Setting from 'src/components/setting/setting'
 import Myorder from 'src/components/myorder/myorder'
+import Myaccount from 'src/components/myaccount/myaccount'
+import Telephone from 'src/components/myaccount/children/telephone'
+import Broadband from 'src/components/myaccount/children/broadband'
+import Tv from 'src/components/myaccount/children/tv'
 
 Vue.use(Router)
 
@@ -136,6 +140,28 @@ export default new Router({
       path: '/myorder',
       name: 'myorder',
       component: Myorder
+    },
+    {
+      path: '/myaccount',
+      name: 'myaccount',
+      component: Myaccount,
+      children:[
+        {
+          path: '/',
+          name: 'telephone',
+          component: Telephone
+        },
+        {
+          path: 'broadband',
+          name: 'broadband',
+          component: Broadband
+        },
+        {
+          path: 'tv',
+          name: 'tv',
+          component: Tv
+        }
+      ]
     }
   ]
 })
