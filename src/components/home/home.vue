@@ -24,7 +24,7 @@
       <cell title="已订业务" is-link>
         <img slot="icon" width="25" style="display:block;margin-right:5px;" src="./images/ye.png">
       </cell>
-      <cell title="我的订单" is-link>
+      <cell title="我的订单" is-link link="/myorder">
         <img slot="icon" width="25" style="display:block;margin-right:5px;" src="./images/order.png">
       </cell>
       <cell title="修改绑定手机" is-link link="/current-phone">
