@@ -36,7 +36,7 @@
     },
     methods: {
       back (){
-        this.$router.replace('index')
+        this.$router.go(-1)
       },
       save(){
         let vm = this

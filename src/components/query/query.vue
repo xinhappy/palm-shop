@@ -51,7 +51,7 @@
     },
     methods: {
       back (){
-        this.$router.replace('index')
+        this.$router.push('/index')
       }
     }
   }

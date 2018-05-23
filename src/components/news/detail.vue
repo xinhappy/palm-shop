@@ -18,7 +18,7 @@
     },
     methods: {
       back (){
-        this.$router.replace('/news')
+        this.$router.push('/news')
       }
     }
   }

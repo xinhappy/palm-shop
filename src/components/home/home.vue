@@ -3,7 +3,7 @@
     <div class="info">
       <div class="clearfix">
         <a class="msg fr" @click="go('message')"></a>
-        <a class="set fr"></a>
+        <a class="set fr" @click="go('setting')"></a>
       </div>
       <div class="info_msg clearfix">
         <div class="head_img">

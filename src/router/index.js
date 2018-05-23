@@ -20,6 +20,7 @@ import ModifyPhone from 'src/components/modify-phone/modify-phone'
 import CurrentPhone from 'src/components/modify-phone/current-phone'
 import Verification from 'src/components/modify-phone/verification'
 import Userinfo from 'src/components/userinfo/userinfo'
+import Setting from 'src/components/setting/setting'
 
 Vue.use(Router)
 
@@ -124,6 +125,11 @@ export default new Router({
       path: '/userinfo',
       name: 'userinfo',
       component: Userinfo
+    },
+    {
+      path: '/setting',
+      name: 'setting',
+      component: Setting
     }
   ]
 })

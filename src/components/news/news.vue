@@ -26,10 +26,10 @@
     },
     methods: {
       back (){
-        this.$router.replace('index')
+        this.$router.push('/index')
       },
       go(path,id){
-        this.$router.replace(path+'/'+id)
+        this.$router.push(path+'/'+id)
       }
     }
   }
