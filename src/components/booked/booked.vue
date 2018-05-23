@@ -2,13 +2,13 @@
   <div>
     <x-header style="background-color:#fff" :left-options="{backText: '',showBack: false}">
       <a slot="left" class="back" @click="back()"></a>
-      <a style="color: #333">我的账户</a>
+      <a style="color: #333">已订业务</a>
     </x-header>
     <div style="margin-top: 2vw">
       <tab :line-width="1" custom-bar-width="60px" active-color="#329dff">
-        <tab-item selected @on-item-click="go('telephone')">固话账户</tab-item>
-        <tab-item @on-item-click="go('broadband')">宽带账户</tab-item>
-        <tab-item @on-item-click="go('tv')">电视账户</tab-item>
+        <tab-item selected @on-item-click="go('telephone-b')">固话账户</tab-item>
+        <tab-item @on-item-click="go('broadband-b')">宽带账户</tab-item>
+        <tab-item @on-item-click="go('tv-b')">电视账户</tab-item>
       </tab>
     </div>
     <div>

@@ -26,6 +26,10 @@ import Myaccount from 'src/components/myaccount/myaccount'
 import Telephone from 'src/components/myaccount/children/telephone'
 import Broadband from 'src/components/myaccount/children/broadband'
 import Tv from 'src/components/myaccount/children/tv'
+import Booked from 'src/components/booked/booked'
+import TelephoneB from 'src/components/booked/children/telephone'
+import BroadbandB from 'src/components/booked/children/broadband'
+import TvB from 'src/components/booked/children/tv'
 
 Vue.use(Router)
 
@@ -160,6 +164,28 @@ export default new Router({
           path: 'tv',
           name: 'tv',
           component: Tv
+        }
+      ]
+    },
+    {
+      path: '/booked',
+      name: 'booked',
+      component: Booked,
+      children:[
+        {
+          path: '/',
+          name: 'telephone-b',
+          component: TelephoneB
+        },
+        {
+          path: 'broadband-b',
+          name: 'broadband-b',
+          component: BroadbandB
+        },
+        {
+          path: 'tv-b',
+          name: 'tv-b',
+          component: TvB
         }
       ]
     }

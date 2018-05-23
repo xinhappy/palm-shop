@@ -9,15 +9,15 @@
         <span slot="title">
           <span style="vertical-align:middle;">固话套餐</span>
         </span>
-        <p slot="inline-desc" class="inline-desc">
-          生效时间:2018-05-05 00:00:00<br>
-          生效时间:2019-05-05 00:00:00
-        </p>
-        <a slot="after-title" class="right_date">
-          <span class="over">已付款</span><br>
-          <span>¥100.00</span>
-        </a>
-      </cell>
+      <p slot="inline-desc" class="inline-desc">
+        生效时间:2018-05-05 00:00:00<br>
+        生效时间:2019-05-05 00:00:00
+      </p>
+      <a slot="after-title" class="right_date">
+        <span class="over">已付款</span><br>
+        <span>¥100.00</span>
+      </a>
+    </cell>
       <cell title="电话套餐">
         <span slot="title">
           <span style="vertical-align:middle;">固话套餐</span>

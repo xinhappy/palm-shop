@@ -21,7 +21,7 @@
       <cell title="我的账户" is-link link="/myaccount">
         <img slot="icon" width="25" style="display:block;margin-right:5px;" src="./images/account.png">
       </cell>
-      <cell title="已订业务" is-link>
+      <cell title="已订业务" is-link link="/booked">
         <img slot="icon" width="25" style="display:block;margin-right:5px;" src="./images/ye.png">
       </cell>
       <cell title="我的订单" is-link link="/myorder">
