@@ -32,7 +32,7 @@
       <p class="fl" style="line-height: 22px;font-size: 16px;">业务查询</p>
     </div>
     <grid :cols="4" :show-lr-borders="false" :show-vertical-dividers="false">
-      <grid-item>
+      <grid-item link="/notice">
         <img slot="icon" src="./images/xiang.png">
         <span class="grid-center">详单查询</span>
       </grid-item>
@@ -44,7 +44,7 @@
         <img slot="icon" src="./images/history.png">
         <span class="grid-center">历史账单</span>
       </grid-item>
-      <grid-item>
+      <grid-item link="/due">
         <img slot="icon" src="./images/dao.png">
         <span class="grid-center">到期查询</span>
       </grid-item>
@@ -62,15 +62,15 @@
       <p class="fl" style="line-height: 22px;font-size: 16px;">业务受理</p>
     </div>
     <grid :cols="4" :show-lr-borders="false" :show-vertical-dividers="false">
-      <grid-item>
+      <grid-item link="/install">
         <img slot="icon" src="./images/chu.png">
         <span class="grid-center">初装申请</span>
       </grid-item>
-      <grid-item>
+      <grid-item link="/downtime">
         <img slot="icon" src="./images/ting.png">
         <span class="grid-center">停机申请</span>
       </grid-item>
-      <grid-item>
+      <grid-item link="reply">
         <img slot="icon" src="./images/fu.png">
         <span class="grid-center">复机申请</span>
       </grid-item>

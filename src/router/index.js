@@ -30,6 +30,26 @@ import Booked from 'src/components/booked/booked'
 import TelephoneB from 'src/components/booked/children/telephone'
 import BroadbandB from 'src/components/booked/children/broadband'
 import TvB from 'src/components/booked/children/tv'
+import Due from 'src/components/due/due'
+import TelephoneD from 'src/components/due/children/telephone'
+import BroadbandD from 'src/components/due/children/broadband'
+import TvD from 'src/components/due/children/tv'
+import Reply from 'src/components/reply/reply'
+import TelephoneR from 'src/components/reply/children/telephone'
+import BroadbandR from 'src/components/reply/children/broadband'
+import TvR from 'src/components/reply/children/tv'
+import Downtime from 'src/components/downtime/downtime'
+import TelephoneDt from 'src/components/downtime/children/telephone'
+import BroadbandDt from 'src/components/downtime/children/broadband'
+import TvDt from 'src/components/downtime/children/tv'
+import Install from 'src/components/install/install'
+import TelephoneI from 'src/components/install/children/telephone'
+import BroadbandI from 'src/components/install/children/broadband'
+import TvI from 'src/components/install/children/tv'
+import Notice from 'src/components/notice/notice'
+import TelephoneN from 'src/components/notice/children/telephone'
+import BroadbandN from 'src/components/notice/children/broadband'
+import TvN from 'src/components/notice/children/tv'
 
 Vue.use(Router)
 
@@ -186,6 +206,116 @@ export default new Router({
           path: 'tv-b',
           name: 'tv-b',
           component: TvB
+        }
+      ]
+    },
+    {
+      path: '/due',
+      name: 'due',
+      component: Due,
+      children:[
+        {
+          path: '/',
+          name: 'telephone-d',
+          component: TelephoneD
+        },
+        {
+          path: 'broadband-d',
+          name: 'broadband-d',
+          component: BroadbandD
+        },
+        {
+          path: 'tv-d',
+          name: 'tv-d',
+          component: TvD
+        }
+      ]
+    },
+    {
+      path: '/downtime',
+      name: 'downtime',
+      component: Downtime,
+      children:[
+        {
+          path: '/',
+          name: 'telephone-dt',
+          component: TelephoneDt
+        },
+        {
+          path: 'broadband-dt',
+          name: 'broadband-dt',
+          component: BroadbandDt
+        },
+        {
+          path: 'tv-dt',
+          name: 'tv-dt',
+          component: TvDt
+        }
+      ]
+    },
+    {
+      path: '/reply',
+      name: 'reply',
+      component: Reply,
+      children:[
+        {
+          path: '/',
+          name: 'telephone-r',
+          component: TelephoneR
+        },
+        {
+          path: 'broadband-r',
+          name: 'broadband-r',
+          component: BroadbandR
+        },
+        {
+          path: 'tv-r',
+          name: 'tv-r',
+          component: TvR
+        }
+      ]
+    },
+    {
+      path: '/install',
+      name: 'install',
+      component: Install,
+      children:[
+        {
+          path: '/',
+          name: 'telephone-i',
+          component: TelephoneI
+        },
+        {
+          path: 'broadband-i',
+          name: 'broadband-i',
+          component: BroadbandI
+        },
+        {
+          path: 'tv-i',
+          name: 'tv-i',
+          component: TvI
+        }
+      ]
+    },
+    {
+      path: '/notice',
+      name: 'notice',
+      component: Notice,
+      children:[
+        {
+          path: '/',
+          name: 'telephone-n',
+          component: TelephoneN
+        },
+        {
+          path: 'broadband-n',
+          name: 'broadband-n',
+          component: BroadbandN
+        },
+        {
+          path: 'tv-n',
+          name: 'tv-n',
+          component: TvN
         }
       ]
     }
