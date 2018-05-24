@@ -10,10 +10,10 @@
         <swiper-item v-for="(item, index) in list" :key="index">
           <div class="tab-swiper vux-center">
             <group gutter="0">
-              <cell title="话费查询" is-link link="/userinfo">
+              <cell title="话费查询" is-link @click.native="go('phone',item)">
                 <img slot="icon" width="25" style="display:block;margin-right:5px;" src="../images/fei.png">
               </cell>
-              <cell title="通话详单" is-link link="/myaccount">
+              <cell title="通话详单" is-link @click.native="go('call',item)">
                 <img slot="icon" width="25" style="display:block;margin-right:5px;" src="../images/tong.png">
               </cell>
               <cell title="历史账单查询" is-link link="/bill">
@@ -52,6 +52,9 @@
       }
     },
     methods: {
+      go(path,month){
+        this.$router.push({name: path,params: {month: month}})
+      }
     }
   }
 </script>

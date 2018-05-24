@@ -50,6 +50,8 @@ import Notice from 'src/components/notice/notice'
 import TelephoneN from 'src/components/notice/children/telephone'
 import BroadbandN from 'src/components/notice/children/broadband'
 import TvN from 'src/components/notice/children/tv'
+import Phone from 'src/components/phone/phone'
+import Call from 'src/components/call/call'
 
 Vue.use(Router)
 
@@ -318,6 +320,16 @@ export default new Router({
           component: TvN
         }
       ]
+    },
+    {
+      path: '/phone',
+      name: 'phone',
+      component: Phone
+    },
+    {
+      path: '/call',
+      name: 'call',
+      component: Call
     }
   ]
 })
